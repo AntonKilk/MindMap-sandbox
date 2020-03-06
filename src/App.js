@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Node from "./components/Nodes"
+import Connectors from "./components/Connectors"
+// import the DiagramComponent
+import { DiagramComponent } from "@syncfusion/ej2-react-diagrams";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+export default class App extends React.Component {
+
+  render(){
+    return <DiagramComponent
+      id="diagram" 
+      width={'100%'} 
+      height={'600px'} 
+      // Add node
+      nodes={Node}
+      // Add connectors
+      connectors={Connectors} 
+    />
+  }
 }
 
-export default App;
