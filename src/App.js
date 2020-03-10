@@ -4,7 +4,6 @@ import Nodes from "./components/Nodes"
 import Connectors from "./components/Connectors"
 import { DiagramComponent, Inject, DataBinding, ComplexHierarchicalTree, ConnectorBridging, DiagramConstraints } from "@syncfusion/ej2-react-diagrams";
 
-
 // Initializes Diagram
 export default class App extends React.Component {
 
@@ -16,15 +15,15 @@ export default class App extends React.Component {
         nodes={Nodes} 
         connectors={Connectors}
         backgroundColor='#fefcf1'
-
+    
         // add assistant? additional fields 
 
         //Uses layout to auto-arrange nodes on the diagram page
-        // layout={{
-        //     //Sets layout type
-        //     type: 'ComplexHierarchicalTree',
-        //     orientation: 'LeftToRight'
-        // }}
+        layout={{
+            //Sets layout type
+            type: 'ComplexHierarchicalTree',
+            orientation: 'LeftToRight'
+        }}
 
         //Sets the default properties for nodes and connectors
         getNodeDefaults={(obj) => {

@@ -22,8 +22,8 @@ let nodeData = [{
     annotations: [{
         content: 'React Fundamentals'
     }],
-    offsetX: 80,
-    offsetY: 400,
+    // offsetX: 80,
+    // offsetY: 400,
 }, {
     annotations: [{
         content: 'Intermediate React'

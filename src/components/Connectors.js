@@ -3,27 +3,21 @@ let Connectors = [{
     id: 'connectr1',
     sourceID: 'node1',
     targetID: 'node2'
-},{
+},
+{
     id: 'connectr2',
     sourceID: 'node1',
     targetID: 'node3'
-}, {
-    id: 'connectr3',
-    sourceID: 'node1',
-    targetID: 'node4'
-}, {
+}, 
+{
     //React Fundamentals connections
     id: 'connectr4',
     sourceID: 'node4',
     targetID: 'node5'
-}, {
+}, 
+{
     id: 'connectr5',
     sourceID: 'node1',
-    targetID: 'node5'
-},
-{
-    id: 'connectr6',
-    sourceID: 'node2',
     targetID: 'node5'
 },
 {
