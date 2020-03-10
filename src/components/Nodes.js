@@ -1,21 +1,55 @@
 
 // A node is created and stored in nodes array.
-let Node = [{
-    // Position of the node
-    offsetX: 250,
-    offsetY: 250,
-    // Size of the node
-    width: 180,
-    height: 100,
-    style: {
-        fill: '#6BA5D7',
-        strokeColor: 'white'
-    },
-    shape: {
-        type: 'Basic',
-        shape: 'Rectangle',
-        cornerRadius: 20
-    },
-    }];
+let nodeData = [{
+    annotations: [{
+        content: 'JavaScript Fundamentals'
+    }],
+    offsetX: 80,
+    offsetY: 0,
+}, {
+    annotations: [{
+        content: 'Intermediate JavaScript'
+    }],
+    offsetX: 415,
+    offsetY: 0,
+}, {
+    annotations: [{
+        content: 'Functional JavaScript'
+    }],
+    offsetX: 570,
+    offsetY: 60,
+}, {
+    annotations: [{
+        content: 'React Fundamentals'
+    }],
+    offsetX: 80,
+    offsetY: 400,
+}, {
+    annotations: [{
+        content: 'Intermediate React'
+    }],
+    offsetX: 415,
+    offsetY: 400,
+}, {
+    annotations: [{
+        content: 'HTML & CSS Fundamentals'
+    }],
+    offsetX: 170,
+    offsetY: 150,
+}, {
+    annotations: [{
+            content: 'Intermediate CSS'
+        }],
+        offsetX: 550,
+        offsetY: 150,
+}];
 
-export default Node;
+// Add common node fields: id, width, height.
+let Nodes = nodeData.map((node, index) => {
+    node.id = `node${index+1}`
+    node.width = 150
+    node.height = 70
+    return node
+})
+
+export default Nodes;

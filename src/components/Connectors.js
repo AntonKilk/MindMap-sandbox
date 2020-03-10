@@ -1,13 +1,36 @@
 let Connectors = [{
-    id: "connector1",
-    sourcePoint: {
-        x: 100,
-        y: 100
-    },
-    targetPoint: {
-        x: 200,
-        y: 200
-    }
-  }];
+    //JavaScript Fundamentals connections
+    id: 'connectr1',
+    sourceID: 'node1',
+    targetID: 'node2'
+},{
+    id: 'connectr2',
+    sourceID: 'node1',
+    targetID: 'node3'
+}, {
+    id: 'connectr3',
+    sourceID: 'node1',
+    targetID: 'node4'
+}, {
+    //React Fundamentals connections
+    id: 'connectr4',
+    sourceID: 'node4',
+    targetID: 'node5'
+}, {
+    id: 'connectr5',
+    sourceID: 'node1',
+    targetID: 'node5'
+},
+{
+    id: 'connectr6',
+    sourceID: 'node2',
+    targetID: 'node5'
+},
+{
+    id: 'connectr7',
+    sourceID: 'node6',
+    targetID: 'node7'
+},
+];
 
   export default Connectors
