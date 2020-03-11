@@ -25,6 +25,36 @@ let Connectors = [{
     sourceID: 'node6',
     targetID: 'node7'
 },
+{
+    id: 'connectr8',
+    sourceID: 'node8',
+    targetID: 'node9'
+},
+{
+    id: 'connectr9',
+    sourceID: 'node10',
+    targetID: 'node11'
+},
+{
+    id: 'connectr10',
+    sourceID: 'node12',
+    targetID: 'node13'
+},
+{
+    id: 'connectr11',
+    sourceID: 'node14',
+    targetID: 'node15'
+},
+{
+    id: 'connectr12',
+    sourceID: 'node2',
+    targetID: 'node5'
+},
+{
+    id: 'connectr13',
+    sourceID: 'node3',
+    targetID: 'node4'
+},
 ];
 
   export default Connectors
